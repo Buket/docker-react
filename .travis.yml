@@ -10,6 +10,8 @@ script:
 
 deploy:
   provider: elasticbeanstalk
+  key: latest/docker-react.zip
+  bundle_type: zip
   region: "us-east-2"
   app: "docker-react"
   env: "Dockerreact-env"
