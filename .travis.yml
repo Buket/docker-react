@@ -10,8 +10,6 @@ script:
 
 deploy:
   provider: elasticbeanstalk
-  key: latest/docker-react.gzip
-  bundle_type: gzip
   region: "us-east-2"
   app: "docker-react"
   env: "Dockerreact-env"
